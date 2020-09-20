@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 set -xueo pipefail
 
 bash ./docker-clean-container.sh

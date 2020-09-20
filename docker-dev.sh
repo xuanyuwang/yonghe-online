@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 REVERSE='\x1b[7m'
 NC='\x1b[0m'
 HOST_BIND_PORT=8000
