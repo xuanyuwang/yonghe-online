@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -xueo pipefail
+
 # Check for Homebrew,
 # Install if we don't have it
 if test ! $(which brew); then
