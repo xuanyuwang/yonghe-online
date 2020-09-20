@@ -32,7 +32,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "docker-dev": "bash docker-dev.sh",
+    "docker-clean-container": "bash docker-clean-container.sh"
   },
   "repository": {
     "type": "git",
