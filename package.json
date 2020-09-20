@@ -34,7 +34,8 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "docker-dev": "bash docker-dev.sh",
-    "docker-clean-container": "bash docker-clean-container.sh"
+    "docker-clean-container": "bash docker-clean-container.sh",
+    "docker-clean-image": "bash docker-clean-image.sh"
   },
   "repository": {
     "type": "git",
