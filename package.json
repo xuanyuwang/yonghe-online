@@ -34,9 +34,10 @@
   "scripts": {
     "build": "gatsby build",
     "dev": "npx eslint . && gatsby develop --port 8080",
-    "start": "npm run develop",
+    "start": "npm run dev",
     "serve": "gatsby serve",
-    "clean": "gatsby clean && rm -rf node_modules",
+    "clean": "gatsby clean",
+    "clean-plus": "gatsby clean && git clean -dxf",
     "unit-test": "npx intern",
     "docker-dev": "bash docker-dev.sh",
     "docker-clean": "bash docker-clean-container.sh",

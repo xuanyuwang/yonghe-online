@@ -4,7 +4,14 @@
     + install [brew](https://brew.sh/), which is a package manager for mac
     + use `brew` to install [Docker](https://www.docker.com/)
 2. register a Docker account (it's free). Then log in your Docker with that account.
-3. run `bash docker-dev.sh` to kick-off your demo page.
+
+## Run your page
+
+There are two ways to run your site. The first way is to run it in your local host, the second way is to run it in a Docker container.
+
+### Run in Docker
+
+Run `bash docker-dev.sh` to kick-off your demo page. That's it.
 
 That's it! Now you should the demo site is running at `http://localhost:8000`!
 
@@ -12,10 +19,32 @@ That's it! Now you should the demo site is running at `http://localhost:8000`!
 _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 ```
 
-## Modify the code and update the site
-1. 0pen your code editor of choice and edit `src/pages/index.js`. Save your changes.
-2. run `bash docker-dev.sh` again.
-3. refresh your browser!
+If you updated your code and want to see the changes, then:
+1. run `bash docker-dev.sh` again.
+2. refresh your browser!
+
+### Run in local
+
+There are many things you need to do in order to run the site in local.
+
+1. Use node 12
+2. `npm install`
+3. `npm run dev`
+
+That's it! Now you should the demo site is running at `http://localhost:8080`!
+
+## Commands
+
+There are some handy commands you may want to know:
+
+- `npm run dev`: build your site and serve it at port 8080.
+- `npm run start`: an alias of `npm run dev`.
+- `npm run clean`: clean your local build.
+- `npm run clean-plus`: clean your local build and everything else. But it won't clean your Docker.
+- `npm run unit-test`: run the unit tests.
+- `npm run docker-dev`: build and run your site in Docker.
+- `npm run docker-clean`: clean your Docker container.
+- `npm run docker-clean-plus`: clean your Docker entirely.
 
 ## What are the files?
 
