@@ -1,4 +1,4 @@
-const { describe, it } = intern.getPlugin('interface.bdd')
+const { describe, it } = intern.getPlugin('interface.bdd');
 const { expect } = intern.getPlugin('chai');
 
 describe('1st test', () => {
@@ -6,4 +6,4 @@ describe('1st test', () => {
 		const a = 1;
 		expect(a).to.equal(1);
 	});
-})
+});
