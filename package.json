@@ -33,7 +33,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "dev": "npx eslint . && gatsby develop",
+    "dev": "npx eslint . && gatsby develop --port 8080",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean && rm -rf node_modules",
