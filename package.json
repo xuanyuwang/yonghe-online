@@ -25,6 +25,7 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "eslint": "^7.9.0",
     "eslint-plugin-react": "^7.21.1",
+    "gh-pages": "^3.1.0",
     "intern": "^4.8.7"
   },
   "keywords": [
@@ -32,6 +33,7 @@
   ],
   "license": "0BSD",
   "scripts": {
+    "deploy-github": "gatsby build --prefix-paths && node publish-gh",
     "build": "gatsby build",
     "dev": "npx eslint . && gatsby develop --port 8080",
     "start": "npm run dev",
