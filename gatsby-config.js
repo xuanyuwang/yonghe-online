@@ -4,6 +4,7 @@ module.exports = {
 		title: 'title',
 		description: 'description',
 		author: 'author',
+		mode: 'test'
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
@@ -12,6 +13,13 @@ module.exports = {
 			options: {
 				name: 'images',
 				path: `${__dirname}/src/images`,
+			},
+		},
+		`gatsby-transformer-json`,
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/testData`,
 			},
 		},
 		'gatsby-transformer-sharp',
