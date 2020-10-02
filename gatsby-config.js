@@ -22,6 +22,17 @@ module.exports = {
 				path: `${__dirname}/testData`,
 			},
 		},
+		//Strapi API
+		// {
+		//   resolve: `gatsby-source-strapi`,
+		//   options: {
+		//     apiURL: `http://localhost:1337`,
+		//     queryLimit: 1000, // Default to 100
+		//     contentTypes: [`our-team`, `cooperator`, `news-collection`],
+		//     //If using single types place them in this array.
+		//     // singleTypes: [`home-page`, `contact`],
+		//   },
+		// },
 		'gatsby-transformer-sharp',
 		'gatsby-plugin-sharp',
 		'gatsby-plugin-sass',
