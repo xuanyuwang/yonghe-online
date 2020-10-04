@@ -5,7 +5,7 @@ import { FaAlignRight } from 'react-icons/fa';
 import './navbar.scss';
 import { Link } from 'gatsby';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.js';
+// import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 class Navbar extends React.Component{
 	constructor(props) {

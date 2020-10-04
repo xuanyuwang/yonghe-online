@@ -15,7 +15,6 @@ module.exports = {
 				path: `${__dirname}/images`,
 			},
 		},
-		`gatsby-transformer-json`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -32,6 +31,12 @@ module.exports = {
 			resolve: `gatsby-source-filesystem`,
 			options: {
 				path: `${__dirname}/testOurteam`,
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/test-fields-info`,
 			},
 		},
 		//Strapi API
