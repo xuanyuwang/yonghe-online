@@ -15,7 +15,7 @@ import './homePageLayout.scss';
 const withScreenHeight = (component, id) => {
 	return <div
 		className='sectionWrapper'
-		style={{ height: window.innerHeight }}
+		style={{ height: typeof window !== 'undefined' ? window.innerHeight : 'auto'}}
 		id={id}
 		key={id}
 	>{component}</div>;
