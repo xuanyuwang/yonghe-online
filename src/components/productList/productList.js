@@ -7,7 +7,7 @@ import Huaping2 from './2h.png';
 
 import {CardGroup,Card,Row,Col,Container,Breadcrumb} from 'react-bootstrap';
 const ProductList = () => {
-	const [value, setValue] = React.useState( window.history.state? window.history.state.pageValue:0);
+	const [value, setValue] = React.useState( typeof window !== 'undefined' && window.history.state? window.history.state.pageValue:0);
 	const products = {
 		'0': {
 			'section':'AAA',
@@ -19,7 +19,6 @@ const ProductList = () => {
 			'section':'CCC',
 		},
 	};
-	console.log(window.history.state);
 	return(
 		<div className="productListSection" style={{backgroundColor:'rgb(248,248,248)'}}>
 			<Container>
