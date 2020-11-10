@@ -1,10 +1,10 @@
 .sectionWrapper {
 	padding-top: 4vh;
 	width: 100vw;
-	height: 96vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	box-sizing: border-box;
 }
 .homePageTopSection {
 	background: white;
