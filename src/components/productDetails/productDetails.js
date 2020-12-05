@@ -78,7 +78,7 @@ const ProductImages = (props) => {
 	const allImages = [mainImage, ...subImages];
 	const [mainImageFluid, setMainImageFluid] = useState(mainImage.localFile.childImageSharp.fluid);
 	const rightSideImages = allImages.filter((image) => { 
-		return image.localFile?.childImageSharp.fluid !== mainImageFluid; 
+		return image.localFile.childImageSharp.fluid !== mainImageFluid; 
 	});
 	const RightSideImages = () => {
 		const result = [];
@@ -86,14 +86,14 @@ const ProductImages = (props) => {
 		for (let index = 0; index < 4; index++) {
 			let thumbnail = null;
 			if (rightSideImages.length > index) {
-				const imgFluid = rightSideImages[index].localFile?.childImageSharp.fluid;
-				thumbnail = <div key={imgFluid?.src}
+				const imgFluid = rightSideImages[index].localFile.childImageSharp.fluid;
+				thumbnail = <div key={imgFluid.src}
 					className={`thumbnail ${classes[index]}-thumbnails`}
 					onClick={() => { setMainImageFluid(imgFluid); }}
 				>
 					<Image 
 						className='thumbnail-image'
-						src={imgFluid?.src}
+						src={imgFluid.src}
 					/>
 				</div>;
 			}
@@ -111,7 +111,7 @@ const ProductImages = (props) => {
 	return <Container className='product-detail-images'>
 		<Row className='product-details-container'>
 			<Col className='product-detail-mainImage' sm={9} xs={9} >
-				<Image src={mainImageFluid?.src} /> 
+				<Image src={mainImageFluid.src} /> 
 				{/* style={{position: ''}}  */}
 			</Col>
 			<Col className='product-detail-thumbnails' sm={3} xs={3}>
